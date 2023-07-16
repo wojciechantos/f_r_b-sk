@@ -59,6 +59,7 @@
             }
         ],
         "prettier/prettier": [
+            2,
             "error",
             {
                 "trailingComma": "es5",

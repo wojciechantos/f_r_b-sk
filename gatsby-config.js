@@ -8,6 +8,7 @@ module.exports = {
     siteMetadata: {
         title: 'Fotograficznie rzecz biorąc',
         siteUrl: 'https://www.yourdomain.tld',
+        description: '',
     },
     plugins: [
         'gatsby-plugin-image',
@@ -19,7 +20,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'images',
-                path: './src/images/',
+                path: './static/images/',
             },
             __key: 'images',
         },
@@ -46,4 +47,7 @@ module.exports = {
             },
         },
     ],
+    flags: {
+        PARTIAL_HYDRATION: true, // Required for Partial Hydration (RSC)
+    },
 };

@@ -39,6 +39,7 @@ export const Head = () => {
             <meta property="og:type" content="business.business" />
             <meta property="og:title" content={title} />
             <meta property="og:url" content="/" />
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </>
     );
 };
